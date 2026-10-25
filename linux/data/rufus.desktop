@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Name=Rufus
+GenericName=Bootable USB Creator
+Comment=Create bootable USB drives from ISO and disk images
+Exec=rufus %f
+Icon=ie.akeo.rufus
+Terminal=false
+Categories=System;Utility;
+Keywords=usb;iso;boot;format;flash;
+MimeType=application/x-cd-image;application/x-iso9660-image;application/x-raw-disk-image;application/x-raw-disk-image-xz-compressed;
+StartupNotify=true

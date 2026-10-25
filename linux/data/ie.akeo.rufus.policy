@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC
+ "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN"
+ "http://www.freedesktop.org/standards/PolicyKit/1/policyconfig.dtd">
+<policyconfig>
+  <vendor>Rufus</vendor>
+  <vendor_url>https://rufus.ie</vendor_url>
+  <action id="ie.akeo.rufus.write">
+    <description>Write to a USB drive</description>
+    <message>Authentication is required to format and write to the selected drive</message>
+    <icon_name>ie.akeo.rufus</icon_name>
+    <defaults>
+      <allow_any>auth_admin</allow_any>
+      <allow_inactive>auth_admin</allow_inactive>
+      <allow_active>auth_admin_keep</allow_active>
+    </defaults>
+    <annotate key="org.freedesktop.policykit.exec.path">@BINDIR@/rufus-cli</annotate>
+  </action>
+</policyconfig>
